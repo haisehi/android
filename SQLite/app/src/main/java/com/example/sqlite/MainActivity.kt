@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
         }
         btnReadCourse!!.setOnClickListener {
             val intent=Intent(this@MainActivity,DisplayCourses::class.java)
-            finish()
             startActivity(intent)
         }
     }

@@ -20,11 +20,11 @@ class DBHelper(context: Context, factory:SQLiteDatabase.CursorFactory?):
     }
 
     override fun onCreate(db: SQLiteDatabase) {
-        val query=("Create table"+ TABLE_NAME+"("
-                + ID_COL+"INTERGER PRIMARY KEY AUTOINCREMENT,"
-                + NAME_COL+"TEXT,"
-                + DECRIPTION_COL+"TEXT,"
-                + DURATION_COL+"TEXT")
+        val query=("CREATE TABLE "+ TABLE_NAME+" ("
+                + ID_COL+" INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + NAME_COL+" TEXT,"
+                + DECRIPTION_COL+" TEXT,"
+                + DURATION_COL+" TEXT)")
         db.execSQL(query)
     }
 
